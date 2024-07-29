@@ -1,0 +1,16 @@
+.grid{
+    background-color: white;
+    border: white solid line;
+}
+
+
+.main_container{
+
+        display: grid;
+        width: 700px;
+        height: 400px;
+        background-color: white;
+        border:black solid thin;
+        margin: auto; 
+
+}

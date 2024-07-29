@@ -3,16 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Project Etch a Sketch</title>
-
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script src="scripts.js"></script>
+    
+    <div id="header_div" class="header_div">
+        <h1>Etch a Sketch Board</h1>
+        <h2>Version 1</h2>
+    </div>
 
     <div id="main_container" class="main_container">
 
+    </div>
+
+    <div id="buttons" class="buttons">
+        <button id="btn" class="btn" onclick="changeColor('black')">Black</button>
+        <button id="btn" class="btn" onclick="changeColor('white')">Erase</button>
+        <button id="btn" class="btn" onclick="changeColor('random')">Mixed Colorsß</button>
+        <button id="btn" class="btn" onclick="clearGrid()">Reset</button>
+        
         
     </div>
+
+
+    <div class="resize">
+        <input 
+        type="text" 
+        placeholder="Set Size: 2 - 100" 
+        onchange="changeSize(this.value)">
+        <button class="sizeBtn">Resize</button>
+    </div>
+
+
+    <footer id="footer" class="footer">
+        <p id="para" class="para">Built by Arshad Jafri</p>
+        <br>
+        <h3>Socials</h3>
+        <i class="fa fa-github" style="font-size:36px"></i>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
